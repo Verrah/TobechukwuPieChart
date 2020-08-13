@@ -1,6 +1,6 @@
 # Tobechukwu pie chart
-### The web's first pie chart for confusion matrices.
-### Best described as True-False-False 'TFF' pie charts.  Named in accordance with Stigler's law.
+### The web's first pie chart for confusion matrices.  Named in accordance with Stigler's law.
+### Best described as True-False-False 'TFF' pie charts.
 
 Visualises data in a typical confusion matrix to add insight about prediction or identification.  
 0   0	  0	  0	  0	    0	  0	  0	  0	  0
@@ -28,6 +28,14 @@ Visualises data in a typical confusion matrix to add insight about prediction or
 0	  0	  1	  2	  1	    0	  1	  2	  0	  0
 
 
+Analysing the confusion matrix to find out how accurate account forecasts were for a given range of predictions
+provides this figure:
+![alt text][TFFpieChart20pc]
+
+
+
+
+[TFFpieChart20pc]: https://github.com/narratorjay/TobechukwuPieChart/blob/master/reports/figures/TFF20pc-demo.png
 
 
 
