@@ -13,7 +13,7 @@ Stresses are on the first and third syllables, it is a compound word.
 @author: jay
 """
 
-#%%    # outer ring is correct thickness, now for near misses
+#%%  
 
 import os
 import pandas as pd
@@ -23,17 +23,13 @@ import statistics
 import matplotlib.pyplot as plt; plt.rcdefaults()
 
 os.chdir('./data/processed')
-#confusionDF = pd.read_csv('marginRowsTargetCols-TopLeftOrigin-mgrPred.csv', header = None)           # managers' predictions, change selection as required
-#confusionDF = pd.read_csv('marginRowsTargetCols-TopLeftOrigin-CatBoostPred.csv', header = None)      # CatBoost
-
-confusionDF = pd.read_csv('sampleConfusionMatrix.csv', header = None)   # Random Forest check this dataframe in console to find sensible run limits                                                                                                        # old run before row/col change  
-
-
+confusionDF = pd.read_csv('sampleConfusionMatrix.csv', header = None)   # check csv has forecasts as rows (y) and margins as columns (x)                                                                                                        # old run before row/col change  
 os.chdir('../../reports/figures')
+
 #%% now for multi-plots of polars
 
-binSize = 5                                 # has to be 5 to match pd.cut step size in previous code
-for diagonalRun in list(range(4,10,1)):     # this range is selected because extreme margins are not usually predicted, also code needs +-1 row cell to count near miss
+binSize = 5                                 # alter as needed to match pd.cut step size in code that created the confusion matrix
+for diagonalRun in list(range(4,10,1)):     # this range is selected because extreme margins are not usually predicted, also code needs +-1 column cell to provide near miss counts
     
     thisRow, thisCol = diagonalRun, diagonalRun
     rowPercent, colPercent = thisRow * binSize - 10, thisCol * binSize - 10
@@ -56,7 +52,7 @@ for diagonalRun in list(range(4,10,1)):     # this range is selected because ext
     # update title string as needed ->
     plt.suptitle('TFF chart for ' + str(rowPercent) + '% - ' + str(rowPercent + binSize) + '% margin forecasts with  \n' + str(truePositive) + ' correctly categorised predictions')
     ax = plt.subplot(111, projection = 'polar')
-    #ax.set(suptitle = 'Suptitle')
+    
     
     ax.set_axis_off()
     truePangle = 2 * np.pi * truePositive / discArea
@@ -69,7 +65,7 @@ for diagonalRun in list(range(4,10,1)):     # this range is selected because ext
     ax.bar((np.pi / 2 + nearMissFPangle / 2), discR, width = nearMissFPangle, bottom = 0, color = '#10253f', alpha = 0.3)       # nearMissFP
     ax.bar((np.pi / 2), ringR - discR, width = np.pi * 2, bottom = discR, color = '#90b5df', alpha = 0.6)                       # falseNegative
     ax.legend(['True positive','False positive','Near miss (FP)','False negative ring'], loc = 'upper left')
-    #plt.show()                                                             # comment out plt.savefig when testing
-    plt.savefig('TEST-TFF' + str(colPercent) + 'pc-demo.png')        # turn off plt.show() to save, change name according to input file
+    plt.show()                                                             # comment out plt.savefig when testing
+    #plt.savefig('TEST-TFF' + str(colPercent) + 'pc-demo.png')        # turn off plt.show() to save, change name as required
     
    

@@ -19,7 +19,7 @@ import pandas as pd
 from sklearn.metrics import confusion_matrix
 
 os.chdir('.data/raw')
-thisDF = pd.read_csv('targets-n-profits.csv')
+thisDF = pd.read_csv('targets-v-margins.csv')
 originalRows = len(thisDF)
 print('Dataframe from original raw csv has provided', originalRows, 'rows.')
 
@@ -54,7 +54,7 @@ thisDF['intTarget'].value_counts()   	# check distribution looks ok, went squiff
 thisDF['intMargin'].value_counts()
 
 # all the preparation has led to this single transforming line
-arrayCM = confusion_matrix(thisDF['intTarget'], thisDF['intMargin'])
+arrayCM = confusion_matrix(thisDF['intTarget'], thisDF['intMargin'])    # target profit is row, actual margin is column
 
 # print and save
 print(arrayCM)
