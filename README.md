@@ -3,7 +3,7 @@
 ### Best described as True-False-False 'TFF' pie charts.
 
 
-Visualises data in a typical confusion matrix to add insight about prediction or identification.
+These visualise data in a confusion matrix to add insight about prediction or identification.  This example is produced by the confusion_matrix package from [sklearn](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html "scikit-learn 0.23.2")
 
 ![alt text][textCMcloseRowsDiag]
 
