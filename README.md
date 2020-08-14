@@ -12,7 +12,6 @@ The conventional 2x2 confusion matrix of binary results for (typically) a pregna
 Analysing this sample confusion matrix to find out how accurate account forecasts were for a given prediction range (20-25%, lower bound) provides this TFF pie chart:
 
 ![alt text][TFFpieChart20pc]
-
 To explain each component please compare the colours and sizes of the the TFF pie chart components with the following example confusion matrix with sample coloured rows and columns.  Note that the TFF pie chart was calculated from values in the confusion matrix above, not the sample below
 
 ![alt text][colourKeyGuide]
