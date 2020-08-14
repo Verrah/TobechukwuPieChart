@@ -1,4 +1,4 @@
-# Tobechukwu pie chart
+# Tobechukwu chart
 ### The web's first pie chart for confusion matrices.  Named in accordance with Stigler's law.
 ### Best described as True-False-False 'TFF' pie charts.
 
@@ -17,7 +17,7 @@ To explain each component please compare the colours and sizes of the the TFF pi
 
 ![alt text][colourKeyGuide]
 
-These Tobechukwu pie charts should be used in conjunction with other graphical analyses of account data.  Combining different representations allows insights to be combined and modified:  the 'cliff' at 0% in the left-hand scatterplot below is not visible in the central violin plot which suggests it is not significant when considering a company's overall performance.  However, it is obvious in the right-hand histogram, and similar counts at 5% and 10% in the histogram reveal a predilection to record results in multiples of 5%.  Whether any action will be taken is up to the client, and TFF pie charts may help inform them to change the way forecasting is done.
+These Tobechukwu charts should be used in conjunction with other graphical analyses of account data.  Combining different representations allows insights to be combined and modified:  the 'cliff' at 0% in the left-hand scatterplot below is not visible in the central violin plot which suggests it is not significant when considering a company's overall performance.  However, it is obvious in the right-hand histogram, and similar counts at 5% and 10% in the histogram reveal a predilection to record results in multiples of 5%.  Whether any action will be taken is up to the client, and TFF pie charts may help inform them in changing their financial forecasts or reports.
 
 ![alt text][threePlots]
 
