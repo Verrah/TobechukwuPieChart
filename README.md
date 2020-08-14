@@ -13,7 +13,7 @@ Analysing this sample confusion matrix to find out how accurate account forecast
 
 ![alt text][TFFpieChart20pc]
 
-To explain each component please compare the colours and sizes of the the TFF pie chart components with the following example confusion matrix with sample coloured rows and columns.  Note that the TFF pie chart was calculated from values in the confusion matrix above, not the sample below
+To explain each component please compare the colours and sizes of the the TFF pie chart components with the following sample figure with coloured rows and columns.  Note that the TFF pie chart was calculated from values in the confusion matrix above, not the sample below
 
 ![alt text][colourKeyGuide]
 
