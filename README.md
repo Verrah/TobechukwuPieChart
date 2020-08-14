@@ -13,15 +13,21 @@ Analysing this sample confusion matrix to find out how accurate account forecast
 
 ![alt text][TFFpieChart20pc]
 
-To explain each component please compare the colours and sizes of the the TFF pie chart components with the following sample figure with coloured rows and columns.  Note that the TFF pie chart was calculated from values in the confusion matrix above, not the sample below
+To explain each component please compare the colours and sizes of the the TFF pie chart components with the following sample figure with coloured rows and columns.  Note that the TFF pie chart was calculated from values in the confusion matrix above, not the sample below.
 
 ![alt text][colourKeyGuide]
 
-The source csv file, code and images are all provided .here.address.creditCookieCutter
+These Tobechukwu pie charts should be used in conjunction with other graphical analyses of account data.  Combining different representations allows insights to be combined and modified:  the 'cliff' at 0% in the left-hand scatterplot below is not visible in the central violin plot which suggests it is not significant when considering a company's overall performance.  However, it is obvious in the right-hand histogram, and similar counts at 5% and 10% in the histogram reveal a predilection to record results in multiples of 5%.  Whether any action will be taken is up to the client, and TFF pie charts may help inform them to change the way forecasting is done.
+
+![alt text][threePlots]
+
+
+(Tobechukwu is a gender-neutral Igbo name, pronounced  tä be chü-(ˌ)kü;  ‘To’ as in ‘top’, ‘be’ as in ‘bet’, ‘chukwu’ as in ‘cuckoo’ but with ‘ch’ as the first consonant.  Stresses are on the first and third syllables, it is a compound word.)
 
 [textCMcloseRowsDiag]: https://github.com/narratorjay/TobechukwuPieChart/blob/master/reports/figures/textCMcloseRowsDiag.png
 [TFFpieChart20pc]: https://github.com/narratorjay/TobechukwuPieChart/blob/master/reports/figures/TFF20pc-demo.png
-[colourKeyGuide]:  https://github.com/narratorjay/TobechukwuPieChart/blob/master/references/componentsOfTFFchart.png
+[colourKeyGuide]: https://github.com/narratorjay/TobechukwuPieChart/blob/master/references/componentsOfTFFchart.png
+[threePlots]: https://github.com/narratorjay/TobechukwuPieChart/blob/master/reports/figures/blankLeptoViolinHistoFigures.png
 
 
 
