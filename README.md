@@ -4,6 +4,8 @@
 
 
 Visualises data in a typical confusion matrix to add insight about prediction or identification.  (One day I'll be able to format tables in a readme.)
+![alt text][textCMcloseRowsDiag]
+
 0   0	  0	  0	  0	   0	  0	  0	  0	  0
 0	  1	  0	  0	  0	   0	  0	  0	  0	  0
 1	  1	  0	  0	  0	   0	  0	  0	  0	  0
@@ -29,7 +31,7 @@ The irrelevant true negatives are not displayed and ignored, and it is immediate
 
 This adds 
 
-
+[textCMcloseRowsDiag]: https://github.com/narratorjay/TobechukwuPieChart/blob/master/reports/figures/textCMcloseRowsDiag.png
 [TFFpieChart20pc]: https://github.com/narratorjay/TobechukwuPieChart/blob/master/reports/figures/TFF20pc-demo.png
 [colourKeyGuide]:  https://github.com/narratorjay/TobechukwuPieChart/blob/master/references/componentsOfTFFchart.png
 
